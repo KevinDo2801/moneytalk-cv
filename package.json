@@ -1,0 +1,13 @@
+{
+  "name": "hackgame",
+  "version": "1.0.0",
+  "description": "Financial tracking application with React frontend and Node.js API",
+  "scripts": {
+    "build": "cd api && npm install && npm run build",
+    "start": "cd api && npm start",
+    "dev": "cd api && npm run dev"
+  },
+  "keywords": ["finance", "transactions", "react", "nodejs", "supabase"],
+  "author": "",
+  "license": "ISC"
+}
