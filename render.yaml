@@ -1,0 +1,38 @@
+services:
+  # API Service
+  - type: web
+    name: hackgame-api
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: api
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+    healthCheckPath: /
+
+  # Static Site (Client)
+  - type: web
+    name: hackgame-client
+    runtime: static
+    region: oregon
+    plan: free
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_SUPABASE_URL
+        sync: false
+      - key: REACT_APP_SUPABASE_ANON_KEY
+        sync: false
+      - key: REACT_APP_GEMINI_API_KEY
+        sync: false
+
