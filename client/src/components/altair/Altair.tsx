@@ -9,7 +9,7 @@ import {
   Modality,
   Type,
 } from "@google/genai";
-let baseapi = "http://localhost:3000/api";
+const baseapi = process.env.REACT_APP_BASE_API || "http://localhost:3000/api";
 
 
 // ----------------- Function Declarations -----------------
