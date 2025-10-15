@@ -1,0 +1,11 @@
+/* Financial Dashboard Styles */
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #E9F1EE;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* space-y-4 = 16px */
+}

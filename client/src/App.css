@@ -1,0 +1,7 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #E9F1EE; /* appBackground from design.json */
+  min-height: 100vh;
+}

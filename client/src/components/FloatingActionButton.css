@@ -1,0 +1,77 @@
+/* Floating Action Button Styles */
+.fab-button {
+  position: fixed;
+  bottom: 96px; /* 24 * 4px = 96px */
+  right: 20px; /* 5 * 4px = 20px */
+  width: 56px; /* 14 * 4px = 56px */
+  height: 56px;
+  color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* 2xl = 24px */
+  font-weight: 700;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 50;
+  background: #CFEDE3;
+  color: #37C78A;
+}
+
+.fab-button:hover {
+  transform: scale(1.1);
+  background: #B8E5D6;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.12);
+}
+
+.fab-button:active {
+  transform: scale(0.95);
+  background: #A0DCC8;
+}
+
+.fab-button i {
+  color: #37C78A;
+}
+
+/* Ripple animation */
+.animate-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Bounce in animation */
+.animate-bounce-in {
+  animation: bounceIn 0.6s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

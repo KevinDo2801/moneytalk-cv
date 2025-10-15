@@ -1,0 +1,142 @@
+/* Expense Chart Styles */
+.chart-container {
+  position: relative;
+  height: 290px; /* h-64 = 16rem = 256px */
+  margin: 0 16px; /* mx-4 = 16px */
+}
+
+.card-container {
+  background: linear-gradient(180deg, #EAF6FA 0%, #D9EAF2 100%);
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  height: 256px; /* h-64 = 16rem = 256px */
+  padding: 16px; /* p-4 = 16px */
+  margin-bottom: 32px;
+}
+
+.card-container:hover {
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}
+
+.chart-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  color: #000000;
+  font-size: 14px; /* text-sm = 14px */
+}
+
+.voice-chat-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: filter 0.5s ease-in-out;
+}
+
+.voice-chat-icon svg {
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+
+.voice-chat-icon svg path {
+  transition: fill 0.5s ease-in-out;
+}
+
+.voice-chat-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 4px 8px rgba(55, 199, 138, 0.4)) !important;
+}
+
+.chart-center-text .font-bold {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.chart-center-text .font-normal {
+  font-weight: 400;
+  color: #8A8A8A;
+  font-size: 0.75rem;
+}
+
+/* Chat icon styles */
+.chat-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-icon:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.chat-icon svg {
+  transition: all 0.2s ease;
+}
+
+.chat-icon:hover svg {
+  fill: #37C78A;
+}
+
+/* Camera icon styles */
+.camera-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.camera-icon:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.camera-icon svg {
+  transition: all 0.2s ease;
+}
+
+.camera-icon:hover svg {
+  fill: #37C78A;
+}
+
+/* Scale up animation */
+.animate-scale-up {
+  animation: scaleUp 0.6s ease-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
